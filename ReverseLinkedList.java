@@ -3,7 +3,6 @@ package leetcode;
 import java.util.Stack;
 
 public class ReverseLinkedList {
-    //思路可以，但是因为stack会导致内存溢出，无法通过leetcode测试
     public ListNode reverseList(ListNode head) {
         if(head == null || head.next == null) return head;
         Stack<ListNode> stack = new Stack<ListNode>();
@@ -17,6 +16,7 @@ public class ReverseLinkedList {
             node.next = stack.pop();
             node = node.next;
         }
+        node.next = null;//非常重要,最后一个节点一定要指向null
         return head;
     }
 }
