@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PascalsTriangle {
+public class PascalsTriangleI {
 	public List<List<Integer>> generate(int numRows) {
 		List<List<Integer>> result = new ArrayList<List<Integer>>();
 		if(numRows <= 0) return result;
@@ -33,7 +33,7 @@ public class PascalsTriangle {
     }
 	
 	public static void main(String args[]){
-		PascalsTriangle pt = new PascalsTriangle();
+		PascalsTriangleI pt = new PascalsTriangleI();
 		pt.generate(1);
 		
 		
