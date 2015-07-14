@@ -29,7 +29,7 @@ public class ReverseLinkedList2 {
             b = c;
             if(c != null) c = c.next;    
         }
-        
+        head.next = null; 
         return a;
     }
 }
